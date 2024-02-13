@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+
+.hover\:nav-text-trans:hover  {
+    --tw-bg-opacity: 1;
+    text-transform: uppercase;
+    transition-duration: .3s;
+    padding: .25rem 0 .25rem 1rem;
+    --tw-translate-x: 1.25rem/* 20px */;
+    border-top-left-radius: .5rem/* 8px */;
+    border-bottom-left-radius: .5rem/* 8px */; 
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+}
