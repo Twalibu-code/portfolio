@@ -1,14 +1,14 @@
 import Navigation from "../../../components/navigation";
 
-const About = () => {
+const Academy = () => {
     return ( 
-        <div className="container flex w-screen">
+        <div className="flex w-screen">
           <div><Navigation /></div>
           <div className="m-16">
-            <h1 className="text-slate-400">About Page</h1>
+            <h1 className="text-slate-400">Academy Page</h1>
           </div>
         </div>
        );
     }
  
-export default About;
+export default Academy;

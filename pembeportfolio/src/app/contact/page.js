@@ -1,13 +1,18 @@
-import Script from "next/script";
+'use client'
+
+import { useState } from "react";
 import Navigation from "../../../components/navigation";
 import Image from "next/image";
 
 const Contact = () => {
+    const [formState, setFormState] = useState("not submitted");
+        console.log(formState);
+
 return ( 
     <div className="flex w-screen">
-        <section>
+        <div>
             <Navigation />
-        </section>
+        </div>
 
         <section className="container mt-2 m-4">
             <div>
@@ -26,7 +31,7 @@ return (
                         <input type="email" name="email" placeholder="abc@example.com" className="p-2 border-solid border-2 rounded shadow-inner shadow-gray-500" /><br/>
                         <label className="indent-2">Message:</label>
                         <textarea type="text" name="name" placeholder="your message goes here" className="p-2 border-solid border-2 rounded shadow-inner shadow-gray-500" /><br/>
-                        <button className="container flex  justify-center items-center border-2 rounded-xl bg-gradient-to-tl from-white to-green-600 text-4xl shadow-md shadow-gray-700 hover:shadow-none hover:send-button"><Image type="submit" src="/send.png" width={30} height={30} /></button>
+                        <button type='button'className="container flex  justify-center items-center border-2 rounded-xl bg-gradient-to-tl from-white to-green-600 text-4xl shadow-md shadow-gray-700 hover:shadow-none hover:send-button" onClick={ ()=> setFormState("submitted") } ><Image type="submit" src="/send.png" width={30} height={30} /></button>
                     </form>
                 </div>
             </div>
