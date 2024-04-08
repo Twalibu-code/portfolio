@@ -1,0 +1,1 @@
+'use client' //must use client rendering because it use client side. 

@@ -5,7 +5,7 @@ const Navigation = () => {
     return ( 
         <div className="bg-gradient-to-r from-blue-500 to-green-500 p-4 h-screen space-y-8 rounded-lg rounded-tl-none rounded-bl-none">
             <div className="mx-8">
-                <Image src="/timetable.png" width={90} height={60}/>
+                <Image src="/timetable.png" alt="icon image" width={90} height={60}/>
             </div>
             <nav className="flex justify-start text-blue-800 font-bold text-xl">
                 <ul className="space-y-4">
